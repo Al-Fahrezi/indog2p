@@ -1,0 +1,19 @@
+# Virtual environment
+myenv/
+.venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Log files
+*.log
+logs/
+
+# Model checkpoints
+*.pt
+checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

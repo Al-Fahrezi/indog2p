@@ -1,7 +1,15 @@
-torch
-transformers
-numpy
+torch>=1.10
+transformers>=4.26
 pandas
-scikit-learn
-tqdm
+numpy
 pyyaml
+scikit-learn
+num2words
+matplotlib
+tqdm
+# Untuk notebook dan EDA (opsional)
+notebook
+ipykernel
+# Untuk evaluasi/serving ONNX (opsional)
+onnx
+onnxruntime
