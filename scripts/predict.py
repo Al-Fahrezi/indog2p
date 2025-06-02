@@ -93,7 +93,9 @@ def predict_word(word, lexicon, model, token2id, id2token, maxlen, phoneme_map, 
     inp_ids, inp_seq = encode_masked_input(mapped, token2id, maxlen)
     inp_tensor = torch.tensor([inp_ids], dtype=torch.long).to(device)
     with torch.no_grad():
-        logits = model(input_ids=inp_tensor).logits
+        # Buat attention_mask (1 untuk token, 0 untuk pad)
+        attention_mask = (inp_tensor != token2id["[PAD]"]).long()
+        logits = model(input_ids=inp_tensor, attention_mask=attention_mask).logits
     pred_ids = inp_ids.copy()
     for i, tok in enumerate(inp_seq):
         if tok == "[MASK]":

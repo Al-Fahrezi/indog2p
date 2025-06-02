@@ -1,19 +1,24 @@
-# Virtual environment
+# Abaikan virtual environment
 myenv/
 .venv/
 
-# Byte-compiled / cache
+# Cache Python
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
 
-# Log files
+# File log dan model
 *.log
-logs/
-
-# Model checkpoints
+*.pkl
 *.pt
+logs/
 checkpoints/
 
-# OS files
+# File dataset sementara
+*.csv
+*.json
+
+# File editor
+.vscode/
 .DS_Store
 Thumbs.db

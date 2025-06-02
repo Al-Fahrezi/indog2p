@@ -68,7 +68,8 @@ def evaluate(model, dataloader, device, pad_token_id, id2token, sample_out=10):
     with torch.no_grad():
         for batch_idx, batch in enumerate(tqdm(dataloader)):
             inp_ids, label_ids = [b.to(device) for b in batch]
-            outputs = model(input_ids=inp_ids)
+            attention_mask = (inp_ids != pad_token_id).long()
+            outputs = model(input_ids=inp_ids, attention_mask=attention_mask)
             logits = outputs.logits  # [B, L, V]
             loss = criterion(
                 logits.view(-1, logits.size(-1)), label_ids.view(-1)

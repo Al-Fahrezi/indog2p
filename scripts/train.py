@@ -158,7 +158,8 @@ def main():
             inp_ids, label_ids = [b.to(device) for b in batch]
 
             # Dynamic masking: pastikan mask hanya untuk 'e' (sudah di-preprocess)
-            outputs = model(input_ids=inp_ids, labels=label_ids)
+            attention_mask = (inp_ids != pad_token_id).long()
+            outputs = model(input_ids=inp_ids, attention_mask=attention_mask, labels=label_ids)
             loss = outputs.loss
 
             optimizer.zero_grad()

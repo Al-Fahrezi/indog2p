@@ -1,27 +1,26 @@
 kata,ipa
-nya,ɲa
-anda,anda
-baur,baur
-belas,bəlas
-compeng,tʃompeŋ
-delapan,dəlapan
-kan,kan
-ku,ku
-lah,lah
-lenggang,leŋgaŋ
-mahasiswa,mahasiswa
-sedarah,sədarah
-sepit,səpit
-tak,taʔ
-wan,wan
-wati,wati
+nya,--ɲa
+anda,-anda
+baur,-baur
+belas,-bəlas
+compeng,-tʃompeŋ
+delapan,-dəlapan
+kan,-kan
+ku,-ku
+lah,-lah
+lenggang,-leŋgaŋ
+mahasiswa,-mahasiswa
+sedarah,-sədarah
+sepit,-səpit
+tak,-taʔ
+wan,-wan
+wati,-wati
 a bah,aʔbah
 a du,aʔdu
 a had,aʔhad
-a go go,ago go
+a go go,a-go-go
 ab,ab
 ab ad,abʔad
-anya, aɲa
 aba,aba
 abad,abad
 abadi,abadi
@@ -289,7 +288,7 @@ agitator,agitator
 aglutinasi,aglutinasi
 agnostik,agnostiʔ
 agnostisisme,agnostisismə
-ago go,agogo
+ago go,ago-go
 agraria,agraria
 agraris,agraris
 agregasi,agregasi
@@ -357,7 +356,7 @@ ajuk,adʒuʔ
 ajukan,adʒukan
 ajun,adʒun
 ajur,adʒur
-ak ak,akaʔ
+ak ak,ak-aʔ
 akad,akad
 akademi,akademi
 akademik,akademiʔ
@@ -469,7 +468,7 @@ akustika,akustika
 akut,akut
 akwal,aʔwal
 al,al
-al qur an,alkurʔan
+al ur an,al-urʔan
 ala,ala
 alabangka,alabaŋka
 alabio,alabio
@@ -530,7 +529,7 @@ alias,alias
 alibi,alibi
 alienasi,alienasi
 alif,alif
-alif ba ta,alifbata
+alif ba ta,alif-ba-ta
 alifbata,alifbata
 alih,alih
 alihan,alihan
@@ -1006,8 +1005,8 @@ anter,antər
 antero,antero
 anteseden,antesedən
 anti,anti
-anti beku,antibəku
-anti karat,antikarat
+anti beku,anti-bəku
+anti karat,anti-karat
 antibeku,antibəku
 antibiosis,antibiosis
 antibiotik,antibiotiʔ
@@ -2507,9 +2506,9 @@ beol,beol
 bepercikan,bəpərtʃikan
 bepergian,bəpərgian
 beperkara,bəpərkara
-ber cakar,bərtʃakar
+ber cakar,bər-tʃakar
 bera,bəra
-bera go go,bəragogo
+bera go go,bəra-go-go
 berabang,bərabaŋ
 berabarkan,bərabarkan
 berabe,bərabe
@@ -2757,7 +2756,7 @@ berbelah,bərbəlah
 berbelahan,bərbəlahan
 berbelang,bərbəlaŋ
 berbelanja,bərbəlandʒa
-berbelas kasihan,bərbəlaskasihan
+berbelas kasihan,bərbəlas-kasihan
 berbelasungkawa,bərbelasuŋkawa
 berbeleng,bərbeleŋ
 berbeli,bərbəli
@@ -2991,8 +2990,8 @@ berdaun,bərdaun
 berdawai,bərdawai
 berdawat,bərdawat
 berdaya,bərdaja
-berdaya cipta,bərdajatʃipta
-berdaya guna,bərdajaguna
+berdaya cipta,bərdaja-tʃipta
+berdaya guna,bərdaja-guna
 berdayung,bərdajuŋ
 berdebar,bərdəbar
 berdebat,bərdebat
@@ -4158,7 +4157,7 @@ bertanding,bərtandiŋ
 bertanduk,bərtanduʔ
 bertangguh,bərtaŋguh
 bertanggung,bərtaŋguŋ
-bertanggung jawab,bərtaŋguŋdʒawab
+bertanggung jawab,bərtaŋguŋ-dʒawab
 bertangkai,bərtaŋkai
 bertangkup,bərtaŋkup
 bertani,bərtani
@@ -4593,7 +4592,7 @@ bintik,bintiʔ
 bintil,bintil
 bintit,bintit
 bintul,bintul
-bintul bahar,bintulbahar
+bintul bahar,bintul-bahar
 bintur,bintur
 binturung,binturuŋ
 biodata,biodata
@@ -4623,7 +4622,7 @@ birama,birama
 biras,biras
 birat,birat
 biri,biri
-biri biri,biribiri
+biri biri,biri-biri
 biring,biriŋ
 birit,birit
 biro,biro
@@ -4664,7 +4663,7 @@ bius,bius
 biut,biut
 bizurai,bizurai
 blabar,blabar
-blak blakan,blakblakan
+blak blakan,blak-blakan
 blangko,blaŋko
 blaster,blastər
 blasteran,blastəran
@@ -5066,7 +5065,7 @@ buntu,buntu
 buntung,buntuŋ
 buntut,buntut
 bunuh,bunuh
-bunuh an,bunuhan
+bunuh an,bunuh-an
 bunuhan,bunuhan
 bunut,bunut
 bunyi,buɲi
@@ -5379,7 +5378,7 @@ carteran,tʃartəran
 caruk,tʃaruʔ
 carut,tʃarut
 cas,tʃas
-cas cis cus,tʃastʃistʃus
+cas cis cus,tʃas-tʃis-tʃus
 cat,tʃat
 catat,tʃatat
 catatan,tʃatatan
@@ -5435,7 +5434,7 @@ cegat,tʃəgat
 ceguk,tʃəguʔ
 cegukan,tʃəgukan
 cek,tʃeʔ
-cek del,tʃəkdəl
+cek del,tʃək-dəl
 cekah,tʃəkah
 cekak,tʃəkaʔ
 cekakak,tʃəkakaʔ
@@ -5827,7 +5826,7 @@ cingkrang,tʃiŋʔraŋ
 cinguk,tʃiŋuʔ
 cingur,tʃiŋur
 cinta,tʃinta
-cinta kasih,tʃintakasih
+cinta kasih,tʃinta-kasih
 cintamani,tʃintamani
 cintanya,tʃintaɲa
 cintrong,tʃintroŋ
@@ -5849,7 +5848,7 @@ cirit,tʃirit
 cis,tʃis
 cit,tʃit
 cita,tʃita
-cita cita,tʃitatʃita
+cita cita,tʃita-tʃita
 citanya,tʃitaɲa
 citarasa,tʃitarasa
 citra,tʃitra
@@ -5904,7 +5903,7 @@ comelan,tʃomelan
 comor,tʃomor
 comot,tʃomot
 comotan,tʃomotan
-compang camping,tʃompaŋtʃampiŋ
+compang camping,tʃompaŋ-tʃampiŋ
 compes,tʃompes
 compoh,tʃompoh
 compreng,tʃompreŋ
@@ -6112,7 +6111,7 @@ daerahnya,daerahɲa
 dafnah,dafnah
 daftar,daftar
 daftaran,daftaran
-dag dig dug,dagdigdug
+dag dig dug,dag-dig-dug
 daga,daga
 dagang,dagaŋ
 dagangan,dagaŋan
@@ -7345,7 +7344,7 @@ diperindah,dipərindah
 diperingatkan,dipəriŋatkan
 diperintah,dipərintah
 diperintahkan,dipərintahkan
-diperjual belikan,dipərdʒualbəlikan
+diperjual belikan,dipərdʒual-bəlikan
 diperkenankan,dipərkənankan
 diperkirakan,dipərkirakan
 diperkosa,dipərkosa
@@ -7362,7 +7361,7 @@ dipersatukan,dipərsatukan
 dipersembahkan,dipərsəmbahkan
 dipersilakan,dipərsilakan
 dipersoalkan,dipərsoalkan
-dipertanggung jawabkan,dipərtaŋguŋdʒawabkan
+dipertanggung jawabkan,dipərtaŋguŋ-dʒawabkan
 dipertanggungjawabkan,dipərtaŋguŋdʒawabkan
 dipertaruhkan,dipərtaruhkan
 dipertentangkan,dipərtəntaŋkan
@@ -8994,7 +8993,7 @@ hajat,hadʒat
 haji,hadʒi
 hajim,hadʒim
 hak,haʔ
-hak milik,hakmiliʔ
+hak milik,hak-miliʔ
 hakekat,hakekat
 hakekatnya,hakekatɲa
 hakikat,hakikat
@@ -9171,7 +9170,7 @@ hidayah,hidajah
 hidraulika,hidraulika
 hidraulis,hidraulis
 hidro,hidro
-hidro elektrik,hidroeleʔtriʔ
+hidro elektrik,hidro-eleʔtriʔ
 hidrogen,hidrogen
 hidrografi,hidrografi
 hidrokarbon,hidrokarbon
@@ -9279,7 +9278,7 @@ hunus,hunus
 hura,hura
 huria,huria
 huru,huru
-huru hara,huruhara
+huru hara,huru-hara
 huruf,huruf
 hutan,hutan
 hutang,hutaŋ
@@ -10247,7 +10246,7 @@ keagamaan,kəagamaʔan
 keagenan,kəagenan
 keagresifan,kəagresifan
 keagungan,kəaguŋan
-keahli negaraan,kəahlinəgaraʔan
+keahli negaraan,kəahli-nəgaraʔan
 keahlian,kəahlian
 keaiban,kəaiban
 keairan,kəairan
@@ -10270,7 +10269,7 @@ keampuhan,kəampuhan
 keampunan,kəampunan
 keandalan,kəandalan
 keanehan,kəanehan
-keaneka ragaman,kəanekaragaman
+keaneka ragaman,kəaneka-ragaman
 keanekaan,kəanekaʔan
 keanekaragaman,kəanekaragaman
 keanggotaan,kəaŋgotaʔan
@@ -10563,7 +10562,7 @@ kedatuan,kədatuan
 kedau,kədau
 kedaulatan,kədaulatan
 kedaung,kədauŋ
-kedaya gunaan,kədajagunaʔan
+kedaya gunaan,kədaja-gunaʔan
 kedayan,kədajan
 kedebong,kədəboŋ
 kedegilan,kədəgilan
@@ -11070,7 +11069,7 @@ keluak,kəluaʔ
 keluan,kəluan
 keluangsa,kəluaŋsa
 keluar,kəluar
-keluar biasaan,kəluarbiasaʔan
+keluar biasaan,kəluar-biasaʔan
 keluaran,kəluaran
 keluarga,kəluarga
 keluargamu,kəluargamu
@@ -11824,7 +11823,7 @@ kesalahannya,kəsalahanɲa
 kesalahpahaman,kəsalahpahaman
 kesalehan,kəsalehan
 kesam,kəsam
-kesama rataan,kəsamarataʔan
+kesama rataan,kəsama-rataʔan
 kesamaan,kəsamaʔan
 kesambet,kəsambət
 kesambi,kəsambi
@@ -11924,7 +11923,7 @@ keserempet,kəsərempet
 keseriusan,kəseriusan
 keserongan,kəseroŋan
 keseronokan,kəsəronokan
-keserta mertaan,kəsərtamərtaʔan
+keserta mertaan,kəsərta-mərtaʔan
 kesertaan,kəsərtaʔan
 keseruduk,kəsəruduʔ
 kesesakan,kəsəsakan
@@ -11933,7 +11932,7 @@ keseser,kəsəsər
 kesesuaian,kəsəsuaian
 kesetanan,kəsetanan
 kesetaraan,kəsətaraʔan
-kesetia kawanan,kəsətiakawanan
+kesetia kawanan,kəsətia-kawanan
 kesetiaan,kəsətiaʔan
 kesetiaannya,kəsətiaʔanɲa
 kesetrum,kəsətrum
@@ -12045,7 +12044,7 @@ ketempatan,kətəmpatan
 ketempuhan,kətəmpuhan
 ketemu,kətəmu
 ketena,kətəna
-ketenaga nukliran,kətənaganuʔliran
+ketenaga nukliran,kətənaga-nuʔliran
 ketenagaan,kətənagaʔan
 ketenagakerjaan,kətənagakərdʒaʔan
 ketenangan,kətənaŋan
@@ -12095,16 +12094,16 @@ ketiau,kətiau
 ketibaan,kətibaʔan
 ketiban,kətiban
 ketidak,kətidaʔ
-ketidak jelasan,kətidakdʒəlasan
-ketidak pastian,kətidakpastian
-ketidak puasan,kətidakpuasan
-ketidak sabaran,kətidaksabaran
-ketidak samaan,kətidaksamaʔan
-ketidak seragaman,kətidaksəragaman
-ketidak seriusan,kətidakseriusan
-ketidak siapan,kətidaksiapan
-ketidak taatan,kətidaktaʔatan
-ketidak tentuan,kətidaktəntuan
+ketidak jelasan,kətidak-dʒəlasan
+ketidak pastian,kətidak-pastian
+ketidak puasan,kətidak-puasan
+ketidak sabaran,kətidak-sabaran
+ketidak samaan,kətidak-samaʔan
+ketidak seragaman,kətidak-səragaman
+ketidak seriusan,kətidak-seriusan
+ketidak siapan,kətidak-siapan
+ketidak taatan,kətidak-taʔatan
+ketidak tentuan,kətidak-təntuan
 ketidakadilan,kətidakadilan
 ketidakhadiran,kətidaʔhadiran
 ketidakpercayaan,kətidaʔpərtʃajaʔan
@@ -12786,7 +12785,7 @@ kutukan,kutukan
 kuyu,kuju
 kuyup,kujup
 kwartir,ʔwartir
-l abi,labi
+l abi,l-abi
 lab,lab
 laba,laba
 labah,labah
@@ -12829,7 +12828,7 @@ lainnya,lainɲa
 laju,ladʒu
 lajur,ladʒur
 laki,laki
-laki laki,lakilaki
+laki laki,laki-laki
 laknat,laʔnat
 laknatullah,laʔnatullah
 lakon,lakon
@@ -12849,7 +12848,7 @@ lalat,lalat
 lali,lali
 lalim,lalim
 lalu,lalu
-lalu lintas,lalulintas
+lalu lintas,lalu-lintas
 laluan,laluan
 lalulintas,lalulintas
 lama,lama
@@ -13865,7 +13864,7 @@ melintang,məlintaŋ
 melintas,məlintas
 melintasi,məlintasi
 melipat,məlipat
-melipat gandakan,məlipatgandakan
+melipat gandakan,məlipat-gandakan
 meliput,məliput
 meliputi,məliputi
 melirik,məliriʔ
@@ -14185,7 +14184,7 @@ membea,məmbea
 membeban,məmbəban
 membebani,məmbəbani
 membebankan,məmbəbankan
-membebas tugaskan,məmbebastugaskan
+membebas tugaskan,məmbebas-tugaskan
 membebaskan,məmbebaskan
 membebat,məmbəbat
 membebek,məmbebeʔ
@@ -14329,7 +14328,7 @@ membersit,məmbərsit
 membesar,məmbəsar
 membesarkan,məmbəsarkan
 membesi,məmbəsi
-membesi tuakan,məmbəsituakan
+membesi tuakan,məmbəsi-tuakan
 membesit,məmbəsit
 membeslah,məmbəslah
 membestel,məmbəstel
@@ -14493,8 +14492,8 @@ membuldoser,məmbuldosər
 membului,məmbului
 membumbui,məmbumbui
 membumi,məmbumi
-membumi hanguskan,məmbumihaŋuskan
-membumi ratakan,məmbumiratakan
+membumi hanguskan,məmbumi-haŋuskan
+membumi ratakan,məmbumi-ratakan
 membumikan,məmbumikan
 membuncah,məmbuntʃah
 membuncahkan,məmbuntʃahkan
@@ -14548,7 +14547,7 @@ membutuhkan,məmbutuhkan
 membuyarkan,məmbujarkan
 membuyur,məmbujur
 memecah,məmətʃah
-memecah belahkan,məmətʃahbəlahkan
+memecah belahkan,məmətʃah-bəlahkan
 memecahkan,məmətʃahkan
 memecal,məmətʃal
 memecat,məmətʃat
@@ -14827,7 +14826,7 @@ memperindah,məmpərindah
 memperingati,məmpəriŋati
 memperingatkan,məmpəriŋatkan
 memperjelas,məmpərdʒəlas
-memperjual belikan,məmpərdʒualbəlikan
+memperjual belikan,məmpərdʒual-bəlikan
 memperjuangkan,məmpərdʒuaŋkan
 memperjudikan,məmpərdʒudikan
 memperkarai,məmpərkarai
@@ -14893,7 +14892,7 @@ mempersulit,məmpərsulit
 mempertahan,məmpərtahan
 mempertahankan,məmpərtahankan
 mempertandingkan,məmpərtandiŋkan
-mempertanggung jawabkan,məmpərtaŋguŋdʒawabkan
+mempertanggung jawabkan,məmpərtaŋguŋ-dʒawabkan
 mempertanyakan,məmpərtaɲakan
 mempertaruhkan,məmpərtaruhkan
 mempertebal,məmpərtəbal
@@ -15127,8 +15126,8 @@ mencampakkan,məntʃampaʔkan
 mencampang,məntʃampaŋ
 mencampung,məntʃampuŋ
 mencampur,məntʃampur
-mencampur adukkan,məntʃampuraduʔkan
-mencampur baurkan,məntʃampurbaurkan
+mencampur adukkan,məntʃampur-aduʔkan
+mencampur baurkan,məntʃampur-baurkan
 mencampuri,məntʃampuri
 mencampurkan,məntʃampurkan
 mencamuk,məntʃamuʔ
@@ -15452,7 +15451,7 @@ mendaduh,məndaduh
 mendaduk,məndaduʔ
 mendadung,məndaduŋ
 mendaftar,məndaftar
-mendaftar hitamkan,məndaftarhitamkan
+mendaftar hitamkan,məndaftar-hitamkan
 mendaftarkan,məndaftarkan
 mendaga,məndaga
 mendagangkan,məndagaŋkan
@@ -15529,7 +15528,7 @@ mendatarkan,məndatarkan
 mendaulat,məndaulat
 mendaulatkan,məndaulatkan
 mendaun,məndaun
-mendaya gunakan,məndajagunakan
+mendaya gunakan,məndaja-gunakan
 mendayu,məndaju
 mendayung,məndajuŋ
 mendayungkan,məndajuŋkan
@@ -15900,14 +15899,14 @@ menepikan,mənəpikan
 menepis,mənəpis
 menepuk,mənəpuʔ
 menepung,mənəpuŋ
-menepung tawari,mənəpuŋtawari
+menepung tawari,mənəpuŋ-tawari
 menera,mənəra
 menerajui,mənəradʒui
 menerakan,mənərakan
 meneral,mənəral
 meneran,mənəran
 menerang,mənəraŋ
-menerang jelaskan,mənəraŋdʒəlaskan
+menerang jelaskan,mənəraŋ-dʒəlaskan
 menerangi,mənəraŋi
 menerangkan,mənəraŋkan
 menerap,mənərap
@@ -15962,7 +15961,7 @@ menetes,mənetes
 menetesi,mənetesi
 meneteskan,məneteskan
 menewaskan,mənewaskan
-meng i,məŋi
+meng i,məŋ--i
 mengabadikan,məŋabadikan
 mengabahkan,məŋabahkan
 mengabaikan,məŋabaikan
@@ -16094,7 +16093,7 @@ mengalati,məŋalati
 mengalatkan,məŋalatkan
 mengali,məŋali
 mengalih,məŋalih
-mengalih tugaskan,məŋalihtugaskan
+mengalih tugaskan,məŋalih-tugaskan
 mengalihkan,məŋalihkan
 mengalin,məŋalin
 mengalingi,məŋaliŋi
@@ -16119,7 +16118,7 @@ mengamati,məŋamati
 mengambai,məŋambai
 mengambang,məŋambaŋ
 mengambau,məŋambau
-mengambek parama artakan,məŋambəkparamaartakan
+mengambek parama artakan,məŋambək-parama-artakan
 mengambil,məŋambil
 mengambili,məŋambili
 mengambilkan,məŋambilkan
@@ -16146,8 +16145,8 @@ mengamput,məŋamput
 mengamputasi,məŋamputasi
 mengamuk,məŋamuʔ
 mengamukkan,məŋamuʔkan
-menganak emaskan,məŋanakəmaskan
-menganak tirikan,məŋanaktirikan
+menganak emaskan,məŋanak-əmaskan
+menganak tirikan,məŋanak-tirikan
 menganalisa,məŋanalisa
 menganalisis,məŋanalisis
 menganalogikan,məŋanalogikan
@@ -16164,8 +16163,8 @@ mengandung,məŋanduŋ
 mengandungi,məŋanduŋi
 mengandungkan,məŋanduŋkan
 menganehkan,məŋanehkan
-menganeka jeniskan,məŋanekadʒəniskan
-menganeka ragamkan,məŋanekaragamkan
+menganeka jeniskan,məŋaneka-dʒəniskan
+menganeka ragamkan,məŋaneka-ragamkan
 menganekakan,məŋanekakan
 menganeksasi,məŋanəʔsasi
 mengangah,məŋaŋah
@@ -16314,7 +16313,7 @@ mengatap,məŋatap
 mengatapi,məŋatapi
 mengatari,məŋatari
 mengatas,məŋatas
-mengatas namakan,məŋatasnamakan
+mengatas namakan,məŋatas-namakan
 mengatasi,məŋatasi
 mengataskan,məŋataskan
 mengatupkan,məŋatupkan
@@ -16508,7 +16507,7 @@ mengemat,məŋəmat
 mengembalikan,məŋəmbalikan
 mengemban,məŋəmban
 mengembang,məŋəmbaŋ
-mengembang biakkan,məŋəmbaŋbiaʔkan
+mengembang biakkan,məŋəmbaŋ-biaʔkan
 mengembangkan,məŋəmbaŋkan
 mengembara,məŋəmbara
 mengembarai,məŋəmbarai
@@ -16753,7 +16752,7 @@ menggapai,məŋgapai
 menggarap,məŋgarap
 menggari,məŋgari
 menggaris,məŋgaris
-menggaris bawahi,məŋgarisbawahi
+menggaris bawahi,məŋgaris-bawahi
 menggariskan,məŋgariskan
 menggasak,məŋgasaʔ
 menggauli,məŋgauli
@@ -17224,7 +17223,7 @@ menit,mənit
 menitahkan,mənitahkan
 meniti,məniti
 menitik,mənitiʔ
-menitik beratkan,mənitikbəratkan
+menitik beratkan,mənitik-bəratkan
 menitikkan,mənitiʔkan
 menitipkan,mənitipkan
 meniup,məniup
@@ -17417,7 +17416,7 @@ menundukkan,mənunduʔkan
 menung,mənuŋ
 menunggak,mənuŋgaʔ
 menunggang,mənuŋgaŋ
-menunggang balikkan,mənuŋgaŋbaliʔkan
+menunggang balikkan,mənuŋgaŋ-baliʔkan
 menunggu,mənuŋgu
 menunggui,mənuŋgui
 menunjang,mənundʒaŋ
@@ -17500,7 +17499,7 @@ menyarung,məɲaruŋ
 menyasarkan,məɲasarkan
 menyatakan,məɲatakan
 menyatu,məɲatu
-menyatu padukan,məɲatupadukan
+menyatu padukan,məɲatu-padukan
 menyatukan,məɲatukan
 menyayangi,məɲajaŋi
 menyayangkan,məɲajaŋkan
@@ -17767,7 +17766,7 @@ menyepit,məɲəpit
 menyepuh,məɲəpuh
 menyepuk,məɲəpuʔ
 menyerah,məɲərah
-menyerah terimakan,məɲərahtərimakan
+menyerah terimakan,məɲərah-tərimakan
 menyerahi,məɲərahi
 menyerahkan,məɲərahkan
 menyerak,məɲeraʔ
@@ -18342,7 +18341,7 @@ modul,modul
 modulasi,modulasi
 modus,modus
 moga,moga
-moga moga,mogamoga
+moga moga,moga-moga
 mogok,mogoʔ
 mohon,mohon
 mohor,mohor
@@ -18452,7 +18451,7 @@ munajat,munadʒat
 munasabah,munasabah
 muncul,muntʃul
 munculnya,muntʃulɲa
-mundar mandir,mundarmandir
+mundar mandir,mundar-mandir
 mundur,mundur
 mungil,muŋil
 mungkar,muŋkar
@@ -18857,7 +18856,7 @@ otorisasi,otorisasi
 otoriter,otoriter
 otot,otot
 ozon,ozon
-pa pa,papa
+pa pa,pa-pa
 pabean,pabean
 pabrik,pabriʔ
 pacak,patʃaʔ
@@ -19074,7 +19073,7 @@ partisi,partisi
 partisipan,partisipan
 partisipasi,partisipasi
 paru,paru
-paru paru,paruparu
+paru paru,paru-paru
 paruh,paruh
 parut,parut
 pas,pas
@@ -19148,7 +19147,7 @@ payau,pajau
 payu,paju
 payudara,pajudara
 payung,pajuŋ
-pe te,pete
+pe te,pe-te
 pebisnis,pəbisnis
 peboling,pəboliŋ
 pecah,pətʃah
@@ -19952,7 +19951,7 @@ pencakup,pəntʃakup
 pencalang,pəntʃalaŋ
 pencalonan,pəntʃalonan
 pencambukan,pəntʃambukan
-pencampur adukan,pəntʃampuradukan
+pencampur adukan,pəntʃampur-adukan
 pencampuran,pəntʃampuran
 pencanai,pəntʃanai
 pencanaian,pəntʃanaian
@@ -20101,8 +20100,8 @@ pendatangan,pəndataŋan
 pendataran,pəndataran
 pendaulat,pəndaulat
 pendaulatan,pəndaulatan
-pendaur ulangan,pəndaurulaŋan
-pendaya gunaan,pəndajagunaʔan
+pendaur ulangan,pəndaur-ulaŋan
+pendaya gunaan,pəndaja-gunaʔan
 pendayang,pəndajaŋ
 pendayangan,pəndajaŋan
 pendayung,pəndajuŋ
@@ -20347,9 +20346,9 @@ pengaman,pəŋaman
 pengamanan,pəŋamanan
 pengamat,pəŋamat
 pengamatan,pəŋamatan
-pengambek parama artaan,pəŋambəkparamaartaʔan
+pengambek parama artaan,pəŋambək-parama-artaʔan
 pengambil,pəŋambil
-pengambil alihan,pəŋambilalihan
+pengambil alihan,pəŋambil-alihan
 pengambilan,pəŋambilan
 pengambrukan,pəŋambrukan
 pengamen,pəŋamen
@@ -20363,7 +20362,7 @@ pengamputasian,pəŋamputasian
 pengamuk,pəŋamuʔ
 pengamukan,pəŋamukan
 penganak,pəŋanaʔ
-penganak tirian,pəŋanaktirian
+penganak tirian,pəŋanak-tirian
 penganalisis,pəŋanalisis
 penganalisisan,pəŋanalisisan
 penganan,pəŋanan
@@ -20373,7 +20372,7 @@ pengandaian,pəŋandaian
 pengandak,pəŋandaʔ
 pengandam,pəŋandam
 penganduh,pəŋanduh
-penganeka ragaman,pəŋanekaragaman
+penganeka ragaman,pəŋaneka-ragaman
 penganekaan,pəŋanekaʔan
 pengang,pəŋaŋ
 penganggaran,pəŋaŋgaran
@@ -20720,7 +20719,7 @@ penguasaan,pəŋuasaʔan
 penguat,pəŋuat
 penguatan,pəŋuatan
 penguatkuasa,pəŋuatkuasa
-pengubah suaian,pəŋubahsuaian
+pengubah suaian,pəŋubah-suaian
 penguburan,pəŋuburan
 pengucapan,pəŋutʃapan
 pengucilan,pəŋutʃilan
@@ -21042,7 +21041,7 @@ penyepit,pəɲəpit
 penyepuh,pəɲəpuh
 penyepuhan,pəɲəpuhan
 penyeragaman,pəɲəragaman
-penyerah terimaan,pəɲərahtərimaʔan
+penyerah terimaan,pəɲərah-tərimaʔan
 penyerahan,pəɲərahan
 penyerang,pəɲəraŋ
 penyerangan,pəɲəraŋan
@@ -21300,7 +21299,7 @@ perbudakan,pərbudakan
 perbujangan,pərbudʒaŋan
 perbukitan,pərbukitan
 perbukuan,pərbukuan
-perbulu tangkisan,pərbulutaŋkisan
+perbulu tangkisan,pərbulu-taŋkisan
 perbungaan,pərbuŋaʔan
 perburuan,pərburuan
 perburuhan,pərburuhan
@@ -21520,14 +21519,14 @@ perkelang,pərkəlaŋ
 perkeluargaan,pərkəluargaʔan
 perkemahan,pərkemahan
 perkemasan,pərkəmasan
-perkembang biakan,pərkəmbaŋbiakan
+perkembang biakan,pərkəmbaŋ-biakan
 perkembangan,pərkəmbaŋan
 perkembangannya,pərkəmbaŋanɲa
 perkenaan,pərkənaʔan
 perkenalan,pərkənalan
 perkenan,pərkənan
 perkencingan,pərkəntʃiŋan
-perkereta apian,pərkəretaapian
+perkereta apian,pərkəreta-apian
 perkerisan,pərkərisan
 perkhidmatan,pərʔhidmatan
 perkilangan,pərkilaŋan
@@ -21678,7 +21677,7 @@ persenjataan,pərsəndʒataʔan
 persentase,pərsentasə
 persentuhan,pərsəntuhan
 perseorangan,pərsəoraŋan
-persepak bolaan,pərsepakbolaʔan
+persepak bolaan,pərsepak-bolaʔan
 persepakatan,pərsəpakatan
 persepatuan,pərsəpatuan
 persepsi,pərsepsi
@@ -21731,7 +21730,7 @@ pertambahan,pərtambahan
 pertambangan,pərtambaŋan
 pertanda,pərtanda
 pertandingan,pərtandiŋan
-pertanggung jawaban,pərtaŋguŋdʒawaban
+pertanggung jawaban,pərtaŋguŋ-dʒawaban
 pertanggungan,pərtaŋguŋan
 pertanian,pərtanian
 pertanyaan,pərtaɲaʔan
@@ -21997,7 +21996,7 @@ pindaan,pindaʔan
 pindah,pindah
 pindahan,pindahan
 ping,piŋ
-ping pong,piŋpoŋ
+ping pong,piŋ-poŋ
 pinga,piŋa
 pingat,piŋat
 pinggan,piŋgan
@@ -22061,7 +22060,7 @@ platina,platina
 pleno,pleno
 plentong,pləntoŋ
 plester,plestər
-plin plan,plinplan
+plin plan,plin-plan
 plonco,plontʃo
 plot,plot
 plus,plus
@@ -22385,7 +22384,7 @@ radiator,radiator
 radikal,radikal
 radin,radin
 radio,radio
-radio isotop,radioisotop
+radio isotop,radio-isotop
 radioaktif,radioaʔtif
 radioaktivitas,radioaʔtivitas
 radiogram,radiogram
@@ -22434,7 +22433,7 @@ rakyat,raʔjat
 rakyatnya,raʔjatɲa
 ralat,ralat
 rama,rama
-rama rama,ramarama
+rama rama,rama-rama
 ramah,ramah
 ramai,ramai
 ramainya,ramaiɲa
@@ -23390,7 +23389,7 @@ segenggam,səgəŋgam
 segera,səgəra
 segeralah,səgəralah
 segi,səgi
-segi tiga,səgitiga
+segi tiga,səgi-tiga
 segianya,səgiaɲa
 segila,səgila
 segitiga,səgitiga
@@ -25351,8 +25350,8 @@ tangguhkan,taŋguhkan
 tangguk,taŋguʔ
 tanggul,taŋgul
 tanggung,taŋguŋ
-tanggung jawab,taŋguŋdʒawab
-tanggung jawabnya,taŋguŋdʒawabɲa
+tanggung jawab,taŋguŋ-dʒawab
+tanggung jawabnya,taŋguŋ-dʒawabɲa
 tanggungan,taŋguŋan
 tanggungjawab,taŋguŋdʒawab
 tangis,taŋis
@@ -25504,7 +25503,7 @@ teguran,təguran
 teh,teh
 teja,tedʒa
 teji,tedʒi
-tek tek,tekteʔ
+tek tek,tek-teʔ
 teka,təka
 tekad,tekad
 tekah,təkah
@@ -26544,7 +26543,7 @@ terpilah,tərpilah
 terpilih,tərpilih
 terpilin,tərpilin
 terpimpin,tərpimpin
-terpinga pinga,tərpiŋapiŋa
+terpinga pinga,tərpiŋa-piŋa
 terpinggir,tərpiŋgir
 terpisah,tərpisah
 terpisahkan,tərpisahkan
@@ -26860,7 +26859,7 @@ tinggalnya,tiŋgalɲa
 tinggi,tiŋgi
 tingginya,tiŋgiɲa
 tingkah,tiŋkah
-tingkah laku,tiŋkahlaku
+tingkah laku,tiŋkah-laku
 tingkap,tiŋkap
 tingkapan,tiŋkapan
 tingkat,tiŋkat
@@ -27162,7 +27161,7 @@ ubat,ubat
 ubi,ubi
 ubin,ubin
 ubun,ubun
-ubun ubun,ubunubun
+ubun ubun,ubun-ubun
 ubur,ubur
 ucap,utʃap
 ucapan,utʃapan
@@ -27233,7 +27232,7 @@ umurnya,umurɲa
 uncang,untʃaŋ
 undan,undan
 undang,undaŋ
-undang undang,undaŋundaŋ
+undang undang,undaŋ-undaŋ
 undangan,undaŋan
 undi,undi
 undian,undian
@@ -27275,7 +27274,7 @@ upayanya,upajaɲa
 upeti,upəti
 upik,upiʔ
 ura,ura
-ura ura,uraura
+ura ura,ura-ura
 urai,urai
 uraian,uraian
 urakan,urakan
@@ -27528,24 +27527,3 @@ zona,zona
 zuhur,zuhur
 zulkarnain,zulkarnain
 zuriat,zuriat
-kanyut,kaɲut
-nyalara,ɲalara
-lenyaku,lenjaku
-kanyemut,kanjemut
-senyura,səɲura
-punyira,puɲira
-anyonda,aɲonda
-runyan,ruɲan
-banyali,baɲali
-konyok,kɔɲok
-nyameta,ɲaməta
-murnya,murɲa
-linyut,liɲut
-nyipara,ɲipara
-nyuplan,ɲuplan
-dinyapa,diɲapa
-nyepang,ɲəpaŋ
-minyatu,miɲatu
-kanyira,kaɲira
-senyobat,səɲobat
-tunyap,tuɲap
