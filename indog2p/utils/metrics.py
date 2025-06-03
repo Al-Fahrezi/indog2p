@@ -10,6 +10,18 @@ Metrik evaluasi untuk pipeline IndoG2P:
 
 import numpy as np
 
+def phoneme_error_rate(pred: str, target: str) -> float:
+    """
+    Menghitung phoneme error rate (PER) antara prediksi dan target IPA.
+    Metode: Levenshtein distance dibagi panjang target.
+    """
+    import numpy as np
+    from difflib import SequenceMatcher
+
+    matcher = SequenceMatcher(None, target, pred)
+    edits = sum(n for _, _, n in matcher.get_opcodes() if _ != "equal")
+    return edits / max(1, len(target))
+
 def edit_distance(seq1, seq2):
     """
     Hitung Levenshtein distance antara dua sequence (bisa string/list id).

@@ -918,3 +918,106 @@ Epoch 43 | Train Loss: 0.0393 | Val Loss: 0.4037 | Val PER: 0.1748 | Time: 36.0s
   >> No improvement (8 epochs).
 Early stopping triggered.
 Training selesai.
+Training started on cpu...
+Epoch 01 | Train Loss: 2.9245 | Val Loss: 3.0227 | Val PER: 0.7250 | Time: 34.5s
+  >> Model saved.
+Epoch 02 | Train Loss: 1.5695 | Val Loss: 2.0954 | Val PER: 0.2205 | Time: 33.7s
+  >> Model saved.
+Epoch 03 | Train Loss: 0.8562 | Val Loss: 1.7603 | Val PER: 0.1398 | Time: 33.5s
+  >> Model saved.
+Epoch 04 | Train Loss: 0.5700 | Val Loss: 1.6229 | Val PER: 0.1190 | Time: 36.7s
+  >> Model saved.
+Epoch 05 | Train Loss: 0.4304 | Val Loss: 1.5542 | Val PER: 0.1255 | Time: 37.6s
+  >> Model saved.
+Epoch 06 | Train Loss: 0.3453 | Val Loss: 1.3922 | Val PER: 0.1363 | Time: 45.3s
+  >> Model saved.
+Epoch 07 | Train Loss: 0.2853 | Val Loss: 1.1748 | Val PER: 0.1442 | Time: 43.0s
+  >> Model saved.
+Epoch 08 | Train Loss: 0.2420 | Val Loss: 1.0087 | Val PER: 0.1488 | Time: 43.8s
+  >> Model saved.
+Epoch 09 | Train Loss: 0.2110 | Val Loss: 0.8887 | Val PER: 0.1546 | Time: 44.3s
+  >> Model saved.
+Epoch 10 | Train Loss: 0.1879 | Val Loss: 0.7993 | Val PER: 0.1674 | Time: 45.0s
+  >> Model saved.
+Epoch 11 | Train Loss: 0.1702 | Val Loss: 0.7212 | Val PER: 0.1694 | Time: 45.1s
+  >> Model saved.
+Epoch 12 | Train Loss: 0.1561 | Val Loss: 0.6654 | Val PER: 0.1744 | Time: 43.8s
+  >> Model saved.
+Epoch 13 | Train Loss: 0.1451 | Val Loss: 0.6277 | Val PER: 0.1749 | Time: 48.8s
+  >> Model saved.
+Epoch 14 | Train Loss: 0.1358 | Val Loss: 0.6057 | Val PER: 0.1767 | Time: 55.1s
+  >> Model saved.
+Epoch 15 | Train Loss: 0.1281 | Val Loss: 0.5818 | Val PER: 0.1777 | Time: 48.2s
+  >> Model saved.
+Epoch 16 | Train Loss: 0.1213 | Val Loss: 0.5627 | Val PER: 0.1738 | Time: 48.1s
+  >> Model saved.
+Epoch 17 | Train Loss: 0.1153 | Val Loss: 0.5387 | Val PER: 0.1648 | Time: 46.2s
+  >> Model saved.
+Epoch 18 | Train Loss: 0.1104 | Val Loss: 0.5217 | Val PER: 0.1590 | Time: 41.2s
+  >> Model saved.
+Epoch 19 | Train Loss: 0.1055 | Val Loss: 0.5045 | Val PER: 0.1569 | Time: 49.8s
+  >> Model saved.
+Epoch 20 | Train Loss: 0.1012 | Val Loss: 0.4846 | Val PER: 0.1555 | Time: 51.7s
+  >> Model saved.
+Epoch 21 | Train Loss: 0.0966 | Val Loss: 0.4630 | Val PER: 0.1527 | Time: 43.0s
+  >> Model saved.
+Epoch 22 | Train Loss: 0.0923 | Val Loss: 0.4471 | Val PER: 0.1516 | Time: 42.3s
+  >> Model saved.
+Epoch 23 | Train Loss: 0.0876 | Val Loss: 0.4295 | Val PER: 0.1511 | Time: 35.7s
+  >> Model saved.
+Epoch 24 | Train Loss: 0.0834 | Val Loss: 0.4110 | Val PER: 0.1486 | Time: 35.7s
+  >> Model saved.
+Epoch 25 | Train Loss: 0.0786 | Val Loss: 0.3946 | Val PER: 0.1468 | Time: 35.2s
+  >> Model saved.
+Epoch 26 | Train Loss: 0.0739 | Val Loss: 0.3749 | Val PER: 0.1417 | Time: 38.5s
+  >> Model saved.
+Epoch 27 | Train Loss: 0.0693 | Val Loss: 0.3535 | Val PER: 0.1382 | Time: 46.3s
+  >> Model saved.
+Epoch 28 | Train Loss: 0.0649 | Val Loss: 0.3457 | Val PER: 0.1395 | Time: 41.6s
+  >> Model saved.
+Epoch 29 | Train Loss: 0.0610 | Val Loss: 0.3400 | Val PER: 0.1405 | Time: 43.8s
+  >> Model saved.
+Epoch 30 | Train Loss: 0.0573 | Val Loss: 0.3308 | Val PER: 0.1400 | Time: 41.8s
+  >> Model saved.
+Epoch 31 | Train Loss: 0.0546 | Val Loss: 0.3365 | Val PER: 0.1437 | Time: 40.2s
+  >> No improvement (1 epochs).
+Epoch 32 | Train Loss: 0.0517 | Val Loss: 0.3391 | Val PER: 0.1461 | Time: 42.2s
+  >> No improvement (2 epochs).
+Epoch 33 | Train Loss: 0.0492 | Val Loss: 0.3450 | Val PER: 0.1503 | Time: 40.9s
+  >> No improvement (3 epochs).
+Epoch 34 | Train Loss: 0.0471 | Val Loss: 0.3544 | Val PER: 0.1542 | Time: 42.5s
+  >> No improvement (4 epochs).
+Epoch 35 | Train Loss: 0.0452 | Val Loss: 0.3752 | Val PER: 0.1621 | Time: 43.0s
+  >> No improvement (5 epochs).
+Epoch 36 | Train Loss: 0.0436 | Val Loss: 0.3873 | Val PER: 0.1836 | Time: 47.9s
+  >> No improvement (6 epochs).
+Epoch 37 | Train Loss: 0.0416 | Val Loss: 0.3946 | Val PER: 0.2305 | Time: 52.6s
+  >> No improvement (7 epochs).
+Epoch 38 | Train Loss: 0.0403 | Val Loss: 0.4116 | Val PER: 0.3149 | Time: 46.8s
+  >> No improvement (8 epochs).
+Early stopping triggered.
+Training selesai.
+Training started on cpu...
+Epoch 01 | Train Loss: 2.9534 | Val Loss: 3.0645 | Val PER: 0.7743 | Time: 44.8s
+  >> Model saved.
+Epoch 02 | Train Loss: 1.5910 | Val Loss: 2.1292 | Val PER: 0.2476 | Time: 46.3s
+  >> Model saved.
+Epoch 03 | Train Loss: 0.8665 | Val Loss: 1.7229 | Val PER: 0.1826 | Time: 46.2s
+  >> Model saved.
+Epoch 04 | Train Loss: 0.5760 | Val Loss: 1.5563 | Val PER: 0.1404 | Time: 46.6s
+  >> Model saved.
+Epoch 05 | Train Loss: 0.4361 | Val Loss: 1.5192 | Val PER: 0.1304 | Time: 43.3s
+  >> Model saved.
+Training selesai.
+Training started on cpu...
+Epoch 01 | Train Loss: 2.9428 | Val Loss: 3.0168 | Val PER: 0.6961 | Time: 38.1s
+  >> Model saved.
+Epoch 02 | Train Loss: 1.5671 | Val Loss: 2.0981 | Val PER: 0.1795 | Time: 42.5s
+  >> Model saved.
+Epoch 03 | Train Loss: 0.8583 | Val Loss: 1.7555 | Val PER: 0.1299 | Time: 45.7s
+  >> Model saved.
+Epoch 04 | Train Loss: 0.5712 | Val Loss: 1.5748 | Val PER: 0.1129 | Time: 44.1s
+  >> Model saved.
+Epoch 05 | Train Loss: 0.4322 | Val Loss: 1.4669 | Val PER: 0.1145 | Time: 41.6s
+  >> Model saved.
+Training selesai.
