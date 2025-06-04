@@ -57,26 +57,29 @@ def evaluate(model, dataloader, device, pad_token_id):
     with torch.no_grad():
         for batch in dataloader:
             inp_ids, label_ids = [b.to(device) for b in batch]
-            outputs = model(input_ids=inp_ids)
-            logits = outputs.logits  # [B, L, V]
+
+            attention_mask = (inp_ids != pad_token_id).long()
+            outputs = model(input_ids=inp_ids, attention_mask=attention_mask)  
+            logits = outputs.logits
+
             loss = criterion(
                 logits.view(-1, logits.size(-1)), label_ids.view(-1)
             )
             total_loss += loss.item() * inp_ids.size(0)
 
-            # Calculate Phoneme Error Rate (PER)
             preds = logits.argmax(dim=-1)
             for pred, label in zip(preds, label_ids):
                 pred_list = pred.cpu().numpy().tolist()
                 label_list = label.cpu().numpy().tolist()
-                # Hapus padding
                 pred_str = [i for i in pred_list if i != pad_token_id]
                 label_str = [i for i in label_list if i != pad_token_id]
                 total_chars += len(label_str)
                 total_err += edit_distance(pred_str, label_str)
+
     per = total_err / max(1, total_chars)
     avg_loss = total_loss / len(dataloader.dataset)
     return avg_loss, per
+
 
 def edit_distance(seq1, seq2):
     # Levenshtein

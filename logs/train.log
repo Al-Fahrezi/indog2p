@@ -1021,3 +1021,15 @@ Epoch 04 | Train Loss: 0.5712 | Val Loss: 1.5748 | Val PER: 0.1129 | Time: 44.1s
 Epoch 05 | Train Loss: 0.4322 | Val Loss: 1.4669 | Val PER: 0.1145 | Time: 41.6s
   >> Model saved.
 Training selesai.
+Training started on cpu...
+Epoch 01 | Train Loss: 2.9678 | Val Loss: 3.1398 | Val PER: 0.8065 | Time: 46.1s
+  >> Model saved.
+Epoch 02 | Train Loss: 1.5981 | Val Loss: 2.1435 | Val PER: 0.2248 | Time: 38.6s
+  >> Model saved.
+Epoch 03 | Train Loss: 0.8696 | Val Loss: 1.6924 | Val PER: 0.1555 | Time: 45.5s
+  >> Model saved.
+Epoch 04 | Train Loss: 0.5769 | Val Loss: 1.4165 | Val PER: 0.1484 | Time: 41.2s
+  >> Model saved.
+Epoch 05 | Train Loss: 0.4353 | Val Loss: 1.2088 | Val PER: 0.1471 | Time: 48.0s
+  >> Model saved.
+Training selesai.
