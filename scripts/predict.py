@@ -2,7 +2,7 @@
 
 import os
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # <<< Tambahan ini penting
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))  # <<< Penting agar Python menemukan utils/
 
 import argparse
 import yaml
@@ -12,6 +12,33 @@ import torch
 import pandas as pd
 from transformers import BertConfig, BertForMaskedLM
 from num2words import num2words
+
+# ====================================================
+# Tambahkan import TextProcessor dan Stanza
+# ====================================================
+from utils.text_processor import TextProcessor
+import stanza
+import logging
+
+# ====================================================
+# Matikan logging berlebihan dari Stanza
+# ====================================================
+logging.getLogger("stanza").setLevel(logging.WARNING)
+
+# ====================================================
+# Inisialisasi TextProcessor
+# ====================================================
+tp = TextProcessor()
+
+# ====================================================
+# Inisialisasi pipeline Stanza untuk Bahasa Indonesia
+# ====================================================
+nlp = stanza.Pipeline(
+    lang="id",
+    processors="tokenize,mwt,pos",
+    tokenize_no_ssplit=True,
+    use_gpu=False
+)
 
 # ====================================================
 # Konstanta path default; sesuaikan jika diperlukan
@@ -40,19 +67,11 @@ def load_vocab():
     return d["token2id"], d["id2token"], d["vocab"]
 
 def clean_text(text: str) -> str:
-    # Lowercase, hilangkan tanda baca, ganti angka jadi kata
-    text = str(text).strip().lower()
-    text = re.sub(r"[^\w\s]", " ", text)    # hanya huruf, angka, spasi
+    # Kalau masih ingin membersihkan karakter tersisa:
+    text = text.strip().lower()
+    text = re.sub(r"[^\w\s]", " ", text)
     text = re.sub(r"\s+", " ", text)
-    text = normalize_number(text)
     return text.strip()
-
-def normalize_number(text: str) -> str:
-    # Ganti setiap angka (contoh: "123") jadi "seratus dua puluh tiga"
-    def repl(m):
-        n = int(m.group(0))
-        return num2words(n, lang="id")
-    return re.sub(r"\d+", repl, text)
 
 def apply_phoneme_map(word: str, phoneme_map: dict) -> str:
     w = word
@@ -90,13 +109,15 @@ def load_lexicon() -> dict:
         return lexicon
     df = pd.read_csv(DICT_PATH)
     for _, row in df.iterrows():
-        # Hapus koma di akhir jika ada (misalnya "aɲa,")
         ipa = str(row["ipa"]).strip().rstrip(",")
         lexicon[str(row["kata"]).strip()] = ipa
     return lexicon
 
+# ====================================================
+# Fungsi utama prediksi per kata (tanpa disambiguator)
+# ====================================================
 def predict_word(word: str,
-                 context_words: list,
+                 pos_tag: str,
                  lexicon: dict,
                  model: BertForMaskedLM,
                  token2id: dict,
@@ -105,29 +126,30 @@ def predict_word(word: str,
                  phoneme_map: dict,
                  device: torch.device) -> str:
 
-    from indog2p.disambiguator import disambiguate   # <<< Import disambiguator
-    
     # =======================================================
-    # 1. Cek rule-based disambiguasi (apel, mental, serang, dst)
+    # 1. Cek lexicon (kamus kata→IPA)
     # =======================================================
-    phon = disambiguate(word, context_words)  # ini memberi 1 kalimat
-    if phon is not None:
-        return phon
-
-    # =====================================
-    # 2. Cek lexicon (kamus kata→IPA)
-    # =====================================
     if word in lexicon:
         return lexicon[word]
 
-    # =====================================
+    # =======================================================
+    # 2. Jika kata tertentu memerlukan override berdasarkan POS
+    #    Contoh: "apel" sebagai homograf
+    # =======================================================
+    if word.lower() == "apel":
+        if pos_tag == "NOUN":
+            return "apəl"   # fonem untuk “apel” (buah)
+        elif pos_tag == "VERB":
+            return "apel"   # fonem untuk “apel” (upacara)
+
+    # =======================================================
     # 3. Aturan fonem dasar (skip 'e')
-    # =====================================
+    # =======================================================
     mapped = apply_phoneme_map(word, phoneme_map)
 
-    # =====================================
+    # =======================================================
     # 4. Masking huruf 'e' → gunakan BERT
-    # =====================================
+    # =======================================================
     inp_ids, inp_seq = encode_masked_input(mapped, token2id, maxlen)
     inp_tensor = torch.tensor([inp_ids], dtype=torch.long).to(device)
     with torch.no_grad():
@@ -140,9 +162,9 @@ def predict_word(word: str,
             pred_idx = int(torch.argmax(logits[0, i]))
             pred_ids[i] = pred_idx
 
-    # =====================================
+    # =======================================================
     # 5. Gabungkan output → string fonem
-    # =====================================
+    # =======================================================
     out_phon = "".join([
         id2token[str(idx)]
         for idx in pred_ids
@@ -150,6 +172,9 @@ def predict_word(word: str,
     ])
     return out_phon
 
+# ====================================================
+# Fungsi prediksi satu baris teks
+# ====================================================
 def predict_line(line: str,
                  lexicon: dict,
                  model: BertForMaskedLM,
@@ -158,20 +183,64 @@ def predict_line(line: str,
                  maxlen: int,
                  phoneme_map: dict,
                  device: torch.device) -> list:
-    words = tokenize(clean_text(line))
+    # ----------------------------------------------------
+    # 1. Langsung normalisasi penuh dengan TextProcessor
+    # ----------------------------------------------------
+    normalized = tp.normalize(line)
+
+    # ----------------------------------------------------
+    # 2. (Opsional) Bersihkan sisa karakter non‐alfanumerik
+    # ----------------------------------------------------
+    normalized = clean_text(normalized)
+
+    # ----------------------------------------------------
+    # 3. Jalankan Stanza untuk mendapatkan token & POS
+    # ----------------------------------------------------
+    doc = nlp(normalized)
+    stanza_words = []
+    print("\n[DEBUG] POS tagging result:")
+    for sent in doc.sentences:
+        for w in sent.words:
+            print(f" - {w.text:15} → {w.upos}")  # ← tampilkan kata dan tag-nya
+            stanza_words.append((w.text, w.upos))
+
+    # ----------------------------------------------------
+    # 4. Tokenisasi sederhana (split spasi)
+    # ----------------------------------------------------
+    words = tokenize(normalized)
+
     result = []
-    for w in words:
+    for idx, w in enumerate(words):
+        pos_tag = None
+        # Cocokkan tokenisasi Stanza dan split spasi:
+        if idx < len(stanza_words) and stanza_words[idx][0] == w:
+            pos_tag = stanza_words[idx][1]
+        else:
+            # Jika mismatch, cari di stanza_words
+            for tw, tp_pos in stanza_words:
+                if tw == w:
+                    pos_tag = tp_pos
+                    break
+
+        # Panggil prediksi fonem per kata
         fonem = predict_word(
-            w, words,  # ← kirim konteks ke sini
-            lexicon, model, token2id, id2token, maxlen, phoneme_map, device
+            w,
+            pos_tag,
+            lexicon,
+            model,
+            token2id,
+            id2token,
+            maxlen,
+            phoneme_map,
+            device
         )
         result.append(fonem)
+
     return result
 
 # ====================================================
 # Fungsi utama: proses --text atau --file
 # ====================================================
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--text", type=str,
@@ -222,11 +291,11 @@ def main():
     # 2. Jika ada --text
     # -------------------------
     if args.text:
-        kal = args.text.strip()
+        kal       = args.text.strip()
         fonem_seq = predict_line(kal, lexicon, model,
                                  token2id, id2token, maxlen,
                                  phoneme_map, device)
-        # Cetak HANYA rangkaian fonem (dipisah spasi)
+        # Cetak hanya rangkaian fonem (dipisah spasi)
         out_str = " ".join(fonem_seq)
         print(out_str)
         out_lines.append(out_str)

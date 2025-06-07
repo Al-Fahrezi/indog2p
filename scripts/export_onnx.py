@@ -22,44 +22,60 @@ def load_vocab():
 
 def main():
     print("=== Export BERT G2P to ONNX ===")
+    
     config = load_config()
     token2id, id2token, vocab = load_vocab()
+
+    # Validasi vocab size
+    vocab_size_actual = len(vocab)
+    pad_token_id = token2id.get("[PAD]", None)
+    if pad_token_id is None:
+        print("❌ Token [PAD] tidak ditemukan di vocab.")
+        sys.exit(1)
+    if pad_token_id >= vocab_size_actual:
+        print(f"❌ PAD ID ({pad_token_id}) melebihi ukuran vocab ({vocab_size_actual}).")
+        sys.exit(1)
+
+    print(f"✅ PAD ID = {pad_token_id}, Vocab size = {vocab_size_actual}")
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
     model_cfg = BertConfig(
-        vocab_size=config["model"]["vocab_size"],
+        vocab_size=vocab_size_actual,  # Gunakan ukuran vocab aktual
         hidden_size=config["model"]["embedding_dim"],
         num_attention_heads=config["model"]["num_heads"],
         num_hidden_layers=config["model"]["num_layers"],
         intermediate_size=config["model"]["feedforward_dim"],
         max_position_embeddings=config["model"]["max_len"],
-        pad_token_id=token2id["[PAD]"],
+        pad_token_id=pad_token_id,
     )
+
     model = BertForMaskedLM(model_cfg)
+
     if not os.path.exists(CHECKPOINT_PATH):
-        print(f"Checkpoint tidak ditemukan: {CHECKPOINT_PATH}")
+        print(f"❌ Checkpoint tidak ditemukan: {CHECKPOINT_PATH}")
         sys.exit(1)
+
     checkpoint = torch.load(CHECKPOINT_PATH, map_location=device)
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
     model.to(device)
-    print("Model loaded.")
+    print("✅ Model loaded.")
 
-    # Dummy input: batch=1, seq_len=max_len (padding)
     max_len = config["model"]["max_len"]
     dummy_input = torch.randint(
-        low=0, high=len(vocab),
+        low=0, high=vocab_size_actual,
         size=(1, max_len),
         dtype=torch.long
     ).to(device)
 
-    # Ekspor ONNX
-    print(f"Exporting to {ONNX_OUTPUT} ...")
+    print(f"📦 Exporting to {ONNX_OUTPUT} ...")
     torch.onnx.export(
         model,
         (dummy_input,),
         ONNX_OUTPUT,
         export_params=True,
-        opset_version=17,  # opset terbaru, sesuaikan dengan environment
+        opset_version=17,
         do_constant_folding=True,
         input_names=['input_ids'],
         output_names=['logits'],
@@ -68,37 +84,34 @@ def main():
             'logits': {0: 'batch_size', 1: 'seq_len'}
         }
     )
-    print("ONNX export selesai.")
+    print("✅ ONNX export selesai.")
 
-    # Validasi ONNX (opsional)
     try:
         import onnx
         import onnxruntime as ort
-        print("Validasi hasil ONNX...")
+        print("🔍 Validasi hasil ONNX...")
         onnx_model = onnx.load(ONNX_OUTPUT)
         onnx.checker.check_model(onnx_model)
-        print("Model ONNX valid.")
+        print("✅ Model ONNX valid.")
 
-        # Uji prediksi PyTorch vs ONNX
         with torch.no_grad():
             pt_logits = model(dummy_input).logits.cpu().numpy()
         ort_session = ort.InferenceSession(ONNX_OUTPUT)
         ort_inputs = {'input_ids': dummy_input.cpu().numpy()}
         ort_logits = ort_session.run(['logits'], ort_inputs)[0]
         diff = abs(pt_logits - ort_logits).mean()
-        print(f"Rata-rata selisih prediksi PyTorch vs ONNX: {diff:.6f}")
-        assert diff < 1e-4, "Prediksi ONNX berbeda signifikan!"
-        print("Prediksi ONNX dan PyTorch cocok.")
+        print(f"📊 Rata-rata selisih PyTorch vs ONNX: {diff:.6f}")
+        assert diff < 1e-4, "❌ Prediksi ONNX berbeda signifikan!"
+        print("✅ Prediksi ONNX dan PyTorch cocok.")
     except ImportError:
-        print("ONNXRuntime/onnx belum terinstall. Lewati validasi.")
+        print("⚠️ ONNXRuntime belum terinstall. Lewati validasi.")
     except Exception as e:
-        print(f"Error validasi ONNX: {e}")
+        print(f"❌ Error validasi ONNX: {e}")
 
-    # Simpan tokenizer vocab (penting untuk deployment)
     vocab_out = ONNX_OUTPUT.replace(".onnx", "_vocab.json")
     with open(vocab_out, "w") as f:
         json.dump({"token2id": token2id, "id2token": id2token, "vocab": vocab}, f, indent=2)
-    print(f"Vocab tokenizer disimpan ke: {vocab_out}")
+    print(f"💾 Vocab tokenizer disimpan ke: {vocab_out}")
 
 if __name__ == "__main__":
     main()
