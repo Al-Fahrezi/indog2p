@@ -12,11 +12,11 @@ from torch.utils.data import Dataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-CONFIG_PATH = "config\config.yaml"
-VOCAB_PATH = "config/vocab.json"
-PROC_DIR = "data/processed/"
-CHECKPOINT_DIR = "checkpoints/"
-LOG_FILE = "logs/train.log"
+CONFIG_PATH = "/content/git/config/config.yaml"
+VOCAB_PATH = "/content/git/config/vocab.json"
+PROC_DIR = "/content/git/data/processed/"
+CHECKPOINT_DIR = "/content/git/checkpoints/"
+LOG_FILE = "/content/git/logs/train.log"
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 os.makedirs("logs", exist_ok=True)
 

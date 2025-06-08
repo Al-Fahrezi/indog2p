@@ -13,12 +13,12 @@ from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 from transformers import BertConfig, BertForMaskedLM
 
-CONFIG_PATH = "config/config.yaml"
-VOCAB_PATH = "config/vocab.json"
-PROC_DIR = "data/processed/"
-CHECKPOINT_DIR = "checkpoints/"
+CONFIG_PATH = "/content/git/config/config.yaml"
+VOCAB_PATH = "/content/git/config/vocab.json"
+PROC_DIR = "/content/git/data/processed/"
+CHECKPOINT_DIR = "/content/git/checkpoints/"
 PRETRAINED_CKPT = os.path.join(CHECKPOINT_DIR, "bert_g2p_best.pt")
-LOG_FILE = "logs/finetune.log"
+LOG_FILE = "/content/git/logs/finetune.log"
 
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 os.makedirs("logs", exist_ok=True)

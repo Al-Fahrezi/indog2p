@@ -10,11 +10,11 @@ from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 from transformers import BertConfig, BertForMaskedLM
 
-CONFIG_PATH = "config/config.yaml"
-VOCAB_PATH = "config/vocab.json"
-PROC_DIR = "data/processed/"
-CHECKPOINT_PATH = "checkpoints/bert_g2p_best.pt"
-LOG_FILE = "logs/eval.log"
+CONFIG_PATH = "/content/git/config/config.yaml"
+VOCAB_PATH = "/content/git/config/vocab.json"
+PROC_DIR = "/content/git/data/processed/"
+CHECKPOINT_PATH = "/content/git/checkpoints/bert_g2p_best.pt"
+LOG_FILE = "/content/git/logs/eval.log"
 
 def log(msg):
     print(msg)

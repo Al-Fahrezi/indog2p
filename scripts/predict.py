@@ -43,11 +43,11 @@ nlp = stanza.Pipeline(
 # ====================================================
 # Konstanta path default; sesuaikan jika diperlukan
 # ====================================================
-CONFIG_PATH       = "config/config.yaml"
-VOCAB_PATH        = "config/vocab.json"
-PHONEME_MAP_PATH  = "config/phoneme_map.json"
-DICT_PATH         = "data/dictionary/ind_phoneme_dict.csv"
-CHECKPOINT_PATH   = "checkpoints/bert_g2p_best.pt"
+CONFIG_PATH       = "/content/git/config/config.yaml"
+VOCAB_PATH        = "/content/git/config/vocab.json"
+PHONEME_MAP_PATH  = "/content/git/config/phoneme_map.json"
+DICT_PATH         = "/content/git/data/dictionary/ind_phoneme_dict.csv"
+CHECKPOINT_PATH   = "/content/git/checkpoints/bert_g2p_best.pt"
 
 # ====================================================
 # Fungsi‐fungsi bantu

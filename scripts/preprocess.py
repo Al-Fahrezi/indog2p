@@ -21,20 +21,20 @@ from utils.text_processor import TextProcessor
 # ====================================================
 # Konstanta path default; sesuaikan jika diperlukan
 # ====================================================
-CONFIG_PATH     = "config/config.yaml"
-PHONEME_MAP_PATH = "config/phoneme_map.json"
-DICT_PATH       = "data/dictionary/id_word2phoneme.csv"
-RAW_DATA_PATH   = "data/dictionary/id_word2phoneme.csv"  # ganti sesuai nama aslinya
-RAW_DIR         = "data/raw/"
-PROC_DIR        = "data/processed/"
-VOCAB_PATH      = "config/vocab.json"
+CONFIG_PATH     = "/content/git/config/config.yaml"
+PHONEME_MAP_PATH = "/content/git/config/phoneme_map.json"
+DICT_PATH       = "/content/git/data/dictionary/id_word2phoneme.csv"
+RAW_DATA_PATH   = "/content/git/data/dictionary/id_word2phoneme.csv"  # ganti sesuai nama aslinya
+RAW_DIR         = "/content/git/data/raw/"
+PROC_DIR        = "/content/git/data/processed/"
+VOCAB_PATH      = "/content/git/config/vocab.json"
 
 # ----------------------------------------------------
 # Pastikan direktori ada
 # ----------------------------------------------------
 os.makedirs(RAW_DIR, exist_ok=True)
 os.makedirs(PROC_DIR, exist_ok=True)
-os.makedirs("data/dictionary", exist_ok=True)
+os.makedirs("/content/git/data/dictionary", exist_ok=True)
 
 # ====================================================
 # Fungsi‐fungsi bantu
